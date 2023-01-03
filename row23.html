@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html  lang="en">
+<meta name="description" content="A comprehensive manually curated plant peptide database">
+<meta name="keywords" content="plant peptide, plants, peptides, manually curarted plant peptides, PlantPepDB, PPepDB, peptide database, plant database, plant peptide database">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Plancies</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div id = "page-wrap">
+		<div id="top-bar">
+	<a href="index.html">
+	<img src="logo.png" align="right" width="230px" height="140px"
+	style="margin-top:-30px;">
+	</a>
+	<a href="index.html">
+	<img src="logo.png" align="left" width="230px" height="140px" style="margin-top:-35px;">
+	</a>
+	<img src="centree.gif" align="centre" width="995px" height="140px"
+	style="margin-top:-30px;">
+	</div> 	
+	<div class= "navbar">
+	<a href="index.html">
+	<i class="fa fa-home" aria-hidden="true" style>
+	</i>
+	<b>HOME</b>
+	</a>
+	<a href="browse.html">
+	<i class="fa fa-folder-open" aria-hidden="true" style>
+	</i>
+	<b>BROWSE</b>
+	</a>
+	<a href="help.html">
+	<i class="fa fa-bookmark" aria-hidden="true" style>
+	</i>
+	<b>HELP</b>
+	</a>
+	<a href="developer.html">
+	<i class="fa fa-user-circle-o" aria-hidden="true" style>
+	</i>
+	<b>DEVELOPER</b>
+	</a>
+	</div>
+	
+<div class="card" id="makepdf">	
+	<h3 class="tittle text-center">Economic Botany Herbarium Details</h3>
+<section class="content banner-bottom-w3ls-agileinfo" >
+
+               <article class="container demo-area">
+  <img class="demo-trigger" src="img23.jpg" width="200" height="300">        
+ 
+<div class="detail">
+   <div class="list"> 
+        <h3 style="font-size: 20px;">Barcode: CAL0000008971</h3>
+		<hr style="border: 1px solid;">
+    <!-- <h2>Description</h2> -->
+        <p><strong>Family: </strong> EUPHORBIACEAE</p>
+        <p><strong>Scientific Name: </strong> Acalypha indica L.</p>
+       <p><strong>Collector: </strong> B. Safui</p>
+       <p><strong>Country: </strong> India</p>
+      <p><strong>Uses: </strong> Decoction is used as laxative.The herb is used against severe cough associated with bleeding from the lungs (haemoptysis) and insipient phthisis. Leaf juice is employed for cutaneous troubles. Juice of fresh leaves are emetic and is useful in croup.</p>
+    
+  </div>
+  </div>
+  </article>
+</section>
+
+
+  </div>
+  
+  <input type="button"  class="btn btn-primary" onclick="browse.html" value="Back" style="cursor: pointer;" />
+ 
+	<button id="button">Generate PDF</button>
+  
+  
+
+
+</div>
+</body>
+<script>
+    var button = document.getElementById("button");
+    var makepdf = document.getElementById("makepdf");
+  
+    button.addEventListener("click", function () {
+        var mywindow = window.open("", "PRINT", 
+                "height=400,width=600");
+  
+        mywindow.document.write(makepdf.innerHTML);
+  
+        mywindow.document.close();
+        mywindow.focus();
+  
+        mywindow.print();
+        mywindow.close();
+  
+        return true;
+    });
+</script>
+</html>
